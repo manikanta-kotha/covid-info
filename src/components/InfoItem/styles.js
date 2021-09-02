@@ -6,8 +6,7 @@ export const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${(props) =>
-    props.isRecovered ? green : props.isConfirmed ? red : grey};
+  color: ${(props) => (props.recovered ? green : props.confirmed ? red : grey)};
   h4 {
     opacity: 0.6;
   }

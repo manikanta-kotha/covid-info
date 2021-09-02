@@ -22,8 +22,12 @@ function App() {
         setLoading(false);
       });
   }, []);
-  const {Global: details} = stats
-  return <AppContainer>{isLoading ? "Loading..." : <Summary details={details}/>}</AppContainer>;
+  const { Global: details } = stats;
+  return (
+    <AppContainer>
+      {isLoading ? "Loading..." : <Summary details={details} />}
+    </AppContainer>
+  );
 }
 
 export default App;

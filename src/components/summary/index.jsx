@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import InfoItem from "../InfoItem";
 
 import { MainContainer } from "./styles";
 
 export default function Summary(props) {
-  console.log("props", props);
+  const { t } = useTranslation();
   const {
     NewConfirmed,
     NewDeaths,
@@ -16,19 +18,19 @@ export default function Summary(props) {
   return (
     <MainContainer>
       <InfoItem
-        title="Confirmed"
-        isConfirmed
+        title={t("confirmed")}
+        confirmed
         newCases={NewConfirmed}
         totalCases={TotalConfirmed}
       />
       <InfoItem
-        title="Recovered"
-        isRecovered
+        title={t("recovered")}
+        recovered
         newCases={NewRecovered}
         totalCases={TotalRecovered}
       />
       <InfoItem
-        title="Deceased"
+        title={t("deceased")}
         newCases={NewDeaths}
         totalCases={TotalDeaths}
       />
