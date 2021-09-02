@@ -1,5 +1,7 @@
 {
   "confirmed": "Confirmed",
   "recovered": "Recovered",
-  "deceased": "Deceased"
+  "deceased": "Deceased",
+  "refresh": "Refresh",
+  "please_wait": "Please wait..."
 }
