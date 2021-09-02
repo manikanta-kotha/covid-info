@@ -5,6 +5,7 @@ import { networkCall } from "../../utils/APIUtils";
 import { SUMMARY_API } from "../../constants";
 
 import { AppContainer } from "./styles";
+import Spinner from "../../components/Spinner";
 
 function App() {
   const [stats, setStats] = useState({});
@@ -22,10 +23,11 @@ function App() {
         setLoading(false);
       });
   }, []);
+
   const { Global: details } = stats;
   return (
     <AppContainer>
-      {isLoading ? "Loading..." : <Summary details={details} />}
+      {isLoading ? <Spinner /> : <Summary details={details} />}
     </AppContainer>
   );
 }
