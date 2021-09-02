@@ -3,5 +3,9 @@
   "recovered": "Recovered",
   "deceased": "Deceased",
   "refresh": "Refresh",
-  "please_wait": "Please wait..."
+  "please_wait": "Please wait...",
+  "country": "Country",
+  "new_confirmed": "New Confirmed",
+  "new_recovered": "New Recovered",
+  "new_deceased": "New Deceased"
 }

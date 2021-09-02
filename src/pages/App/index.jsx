@@ -8,6 +8,7 @@ import { AppContainer } from "./styles";
 import Spinner from "../../components/Spinner";
 import useApi from "../../utils/useApi";
 import LoadingButton from "../../components/LoadingButton";
+import DataTable from "../../components/Table";
 
 function App() {
   const [stats, isLoading, error, refresh] = useApi(SUMMARY_API, "GET");
@@ -19,8 +20,9 @@ function App() {
     return <Spinner />;
   }
 
-  const { Global: details } = stats;
-  // todo: do error handling
+  const { Global: details, Countries: countries } = stats;
+  // TODO: do error handling
+  console.log("error", error);
 
   return (
     <AppContainer>
@@ -30,6 +32,7 @@ function App() {
         onClick={refresh}
       />
       <Summary details={details} />
+      <DataTable data={countries} />
     </AppContainer>
   );
 }
