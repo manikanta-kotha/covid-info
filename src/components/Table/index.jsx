@@ -57,7 +57,7 @@ export default function DataTable(props) {
         getRowId={(row) => row.ID}
         rows={data}
         columns={columns}
-        pageSize={7}
+        perPageSize={7}
       />
     </MainContainer>
   );

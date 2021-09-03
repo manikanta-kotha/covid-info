@@ -22,10 +22,3 @@ export const Spin = styled.div`
   height: 24px;
   border-radius: 50%;
 `;
-
-export const PageLoader = styled.div`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;

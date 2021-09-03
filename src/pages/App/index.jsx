@@ -24,12 +24,16 @@ function App() {
   // TODO: do error handling
   console.log("error", error);
 
+  const sample = () => {
+    throw new Error("dadfds");
+  };
+
   return (
     <AppContainer>
       <LoadingButton
         title={isLoading ? t("please_wait") : t("refresh")}
         loading={isLoading}
-        onClick={refresh}
+        onClick={sample}
       />
       <Summary details={details} />
       <DataTable data={countries} />

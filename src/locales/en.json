@@ -7,5 +7,6 @@
   "country": "Country",
   "new_confirmed": "New Confirmed",
   "new_recovered": "New Recovered",
-  "new_deceased": "New Deceased"
+  "new_deceased": "New Deceased",
+  "something_wrong": "OOPS! Something went wrong."
 }
