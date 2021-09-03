@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import loadable from "@loadable/component";
 
 import Summary from "../../components/summary";
 import { SUMMARY_API } from "../../constants";
@@ -8,7 +9,8 @@ import { AppContainer } from "./styles";
 import Spinner from "../../components/Spinner";
 import useApi from "../../utils/useApi";
 import LoadingButton from "../../components/LoadingButton";
-import Table from "../../components/Table";
+// lazy loading the table component on deamnd
+const Table = loadable(() => import("../../components/Table"));
 
 function App() {
   const [stats, isLoading, error, refresh] = useApi(SUMMARY_API, "GET");
