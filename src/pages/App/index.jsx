@@ -8,7 +8,7 @@ import { AppContainer } from "./styles";
 import Spinner from "../../components/Spinner";
 import useApi from "../../utils/useApi";
 import LoadingButton from "../../components/LoadingButton";
-import DataTable from "../../components/Table";
+import Table from "../../components/Table";
 
 function App() {
   const [stats, isLoading, error, refresh] = useApi(SUMMARY_API, "GET");
@@ -21,22 +21,18 @@ function App() {
   }
 
   const { Global: details, Countries: countries } = stats;
-  // TODO: do error handling
+  // TODO: do error toast handling
   console.log("error", error);
-
-  const sample = () => {
-    throw new Error("dadfds");
-  };
 
   return (
     <AppContainer>
       <LoadingButton
         title={isLoading ? t("please_wait") : t("refresh")}
         loading={isLoading}
-        onClick={sample}
+        onClick={refresh}
       />
       <Summary details={details} />
-      <DataTable data={countries} />
+      <Table data={countries} />
     </AppContainer>
   );
 }

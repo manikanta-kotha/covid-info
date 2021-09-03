@@ -4,14 +4,19 @@ import "./index.css";
 import App from "./pages/App";
 import reportWebVitals from "./reportWebVitals";
 
-// import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorBoundary from "./components/ErrorBoundary";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <ErrorBoundary> */}
-    <App />
-    {/* </ErrorBoundary> */}
+    <ErrorBoundary>
+      <Header />
+      <App />
+      <Footer />
+    </ErrorBoundary>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -11,7 +11,7 @@ export default function LoadingButton(props) {
     <div className={classes.root}>
       <div className={classes.wrapper}>
         <Button
-          variant="contained"
+          variant="outlined"
           color="primary"
           className={classes.buttonClassname}
           disabled={loading}

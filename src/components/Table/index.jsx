@@ -48,7 +48,7 @@ const columns = [
   },
 ];
 
-export default function DataTable(props) {
+export default function Table(props) {
   const { data } = props;
 
   return (
@@ -57,7 +57,7 @@ export default function DataTable(props) {
         getRowId={(row) => row.ID}
         rows={data}
         columns={columns}
-        perPageSize={7}
+        pageSize={7}
       />
     </MainContainer>
   );
