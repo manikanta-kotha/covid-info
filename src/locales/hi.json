@@ -1,0 +1,13 @@
+{
+  "confirmed": "की पुष्टि की ",
+  "recovered": "बरामद",
+  "deceased": "मृतक",
+  "refresh": "ताज़ा करना",
+  "please_wait": "कृपया प्रतीक्षा करें...",
+  "country": "देश",
+  "new_confirmed": "नई पुष्टि",
+  "new_recovered": "नया बरामद",
+  "new_deceased": "नया मृतक",
+  "heading": "कोरोनावाइरस के केस",
+  "something_wrong": "उफ़! कुछ गलत हो गया।"
+}
