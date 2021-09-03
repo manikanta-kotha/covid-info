@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import loadable from "@loadable/component";
 
-import Summary from "../../components/summary";
+import Summary from "../../components/Summary";
 import { SUMMARY_API } from "../../constants";
 
 import { AppContainer } from "./styles";
@@ -14,7 +14,6 @@ const Table = loadable(() => import("../../components/Table"));
 
 function App() {
   const [stats, isLoading, error, refresh] = useApi(SUMMARY_API, "GET");
-  // console.log("newResp", stats, isLoading, error);
 
   const { t } = useTranslation();
 
@@ -24,7 +23,6 @@ function App() {
 
   const { Global: details, Countries: countries } = stats;
   // TODO: do error toast handling
-  console.log("error", error);
 
   return (
     <AppContainer>

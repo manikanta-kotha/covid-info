@@ -6,7 +6,6 @@ import InfoItem from "../InfoItem";
 import { MainContainer } from "./styles";
 
 export default function Summary(props) {
-  console.log("props", props);
   const { t } = useTranslation();
   const {
     NewConfirmed,
