@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# [covid-info](https://manikanta-kotha.github.io/covid-info/)
+
+# Coronavirus Cases world wide info
+
+### About
+
+- This project fetches the statistics from [https://api.covid19api.com/summary](https://api.covid19api.com/summary) covid 19 API
+- shows overall stats
+- shows country wise details in a table with sort, filter options
+- user can refresh the data without full page refresh
+- user can switch the language in the footer.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
